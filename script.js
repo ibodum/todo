@@ -17,27 +17,36 @@ var mesArray = ["do what ever your wife says, happy wife ,happy life :)",
 "i love to spent moneyyyyyyyyyyyyyy ha ha ha ",
  "money money where is honey"]
 
+ // if you want to add image to your page
+ var img = document.createElement("img");
+img.src = "https://allthingslearning.files.wordpress.com/2013/06/donkey-shrek.jpg";
+img.style.width = "200px";
+img.style.height = "auto";
+var src = document.getElementById("header");
+src.appendChild(img);
+
 function addeventtoall() {
 	button1.addEventListener("click", function() {
 	    var message1 = mesArray
 	    const randomIndex = Math.round(Math.random()*mesArray.length);
-	    message.textContent = mesArray[randomIndex]
+	    message.textContent = mesArray[randomIndex] 
+
 
 	})
 	button2.addEventListener("click", function() {
 		var message2 = mesArray
 		const randomIndex = Math.round(Math.random()*mesArray.length);
-		message.textContent = mesArray[randomIndex]
+		message.textContent = mesArray[randomIndex] 
 	})
 	button3.addEventListener("click", function() {
 		var message3 = mesArray
 		const randomIndex = Math.round(Math.random()*mesArray.length);
-		message.textContent = mesArray[randomIndex]
+		message.textContent = mesArray[randomIndex] 
 	})
 	button4.addEventListener("click", function() {
 		var message4 = mesArray
 		const randomIndex = Math.round(Math.random()*mesArray.length);
-		message.textContent = mesArray[randomIndex]
+		message.textContent = mesArray[randomIndex] 
 	})
 	
 	}
